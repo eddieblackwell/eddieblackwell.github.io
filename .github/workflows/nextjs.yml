@@ -46,7 +46,7 @@ jobs:
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
       - name: Install dependencies
-        run: cd portfolio && npm ci
+        run: cd portfolio && npm install
       - name: Build with Next.js
         run: cd portfolio && npx next build
       - name: Upload artifact
